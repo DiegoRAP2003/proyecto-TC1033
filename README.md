@@ -1,6 +1,14 @@
 # proyecto-TC1033
 
-Este avance esta enfocado en la creacion inicial de clases al igual que la creacion de la idea para el proyecto final,
-en este avance se hace la creacion de 2 objetos diferentes de cada clase, y se utilizan metodos adentro de una funcion que se 
-implementara mas adelante en las clases. Estos objetos estan creados para comprobar que los metodos si funcionan y que no nos arrojan ningun error al momento de compilar
-y de correrlo.
+##Contexto
+Este proyecto es basado en una cafeteria que tiene diferentes tipos de cafes, al igual que diferentes tamanios de cafe, tambien como en cualquier cafeteria
+se pueden ordenar diferentes productos si asi se desea, y dar un total a pagar
+
+##Funcionalidad
+El programa funciona para elegir tanto el tipo de cafe que se quiere, teniendo capuccino, americano y latte, asi como tambien 3 tipos diferentes de leche, y 3 tipos 
+diferentes de tamanios
+
+Al igual que diferentes funciones para desplegar los menus, y una funcion que hace que los tamanios se conviertan a numeros para que lo reciban los objetos
+
+
+
