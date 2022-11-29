@@ -27,6 +27,7 @@ class Cafe{
         float temperatura;
         string nombre_leche;
         int cantidad;
+        float precio;
     
     public:
 
@@ -40,12 +41,14 @@ class Cafe{
         void set_temperatura(float temp);
         void set_nombre_leche(string n);
         void set_cantidad(int c);
+        void set_precio(float p);
 
         //getters
         int get_tipo_leche();
         float get_temperatura();
         string get_nombre_leche();
         int get_cantidad();
+        float get_precio();
 
         //metodos
         string conversion_leche();
@@ -106,6 +109,16 @@ string Cafe::conversion_leche(){
 //setters
 
 /*
+*setter para la variable precio
+*
+*@param float p
+*@return 
+*/
+void Cafe::set_precio(float p){
+    precio = p;
+}
+
+/*
 *setter para la variable cantidad
 *
 *@param int c
@@ -146,6 +159,16 @@ void Cafe::set_tipo_leche(int t_l){
 }
 
 //getters
+
+/*
+*getter para la variable precio
+*
+*@param 
+*@return float precio
+*/
+float Cafe::get_precio(){
+    return precio;
+}
 
 /*
 *getter para la variable cantidad
@@ -192,7 +215,7 @@ int Cafe::get_tipo_leche(){
 class Capuccino : public Cafe{
     
     protected:    
-        float precio;
+        
         int espuma;        
 
     public:
@@ -206,10 +229,10 @@ class Capuccino : public Cafe{
 
         //getters y setters
         int get_espuma();
-        float get_precio();
+        
 
         void set_espuma(int e);
-        void set_precio(float p);
+        
 };
 
 /*
@@ -277,16 +300,6 @@ int Capuccino::get_espuma(){
     return espuma;
 }
 
-/*
-*getter para la variable precio
-*
-*@param 
-*@return float precio
-*/
-float Capuccino::get_precio(){
-    return precio;
-}
-
 //setters
 
 /*
@@ -299,21 +312,11 @@ void Capuccino::set_espuma(int e){
     espuma = e;
 }
 
-/*
-*setter para la variable precio
-*
-*@param float p
-*@return 
-*/
-void Capuccino::set_precio(float p){
-    precio = p;
-}
-
 //declaro la calse americano que hereda de cafe
 
 class Americano:public Cafe{
     private:
-        float precio;
+        
     public:
 
         //constructores
@@ -376,31 +379,13 @@ void Americano::imprime_americano(){
     cout<<"Su cafe americano a "<<temperatura<< " grados"<<" ha sido agregado a su orden."<< endl;
 }
 
-/*
-*setter para la variable precio
-*
-*@param float p
-*@return 
-*/
-void Americano::set_precio(float p){
-    precio = p;
-}
 
-/*
-*getter para la variable precio
-*
-*@param 
-*@return float precio
-*/
-float Americano::get_precio(){
-    return precio;
-}
 
 //declaro la calse latte que hereda de cafe
 
 class Latte: public Cafe{
     private:
-        float precio;
+        
     public:
 
         //constructores
@@ -470,23 +455,5 @@ void Latte::imprime_latte(){
     cout<<"Su latte con leche: "<<conversion_leche()<<" a "<<temperatura<< " grados"<<" ha sido agregado a su orden."<< endl;
 }
 
-/*
-*setter para la variable precio
-*
-*@param float p
-*@return 
-*/
-void Latte::set_precio(float p){
-    precio = p;
-}
 
-/*
-*getter para la variable precio
-*
-*@param 
-*@return float precio
-*/
-float Latte::get_precio(){
-    return precio;
-}
 #endif
