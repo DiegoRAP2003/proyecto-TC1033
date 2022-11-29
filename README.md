@@ -1,4 +1,4 @@
-# proyecto-TC1033
+# Proyecto-TC1033
 
 ## Contexto
 Este proyecto es basado en una cafeteria que tiene diferentes tipos de cafes, al igual que diferentes tamanios de cafe, tambien como en cualquier cafeteria
